@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>profession</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    </head>
+    <body>
+        <h1>Миссия Колонизация Марса</h1>
+        <h4>И на Марсе будут яблони цвести!</h4>
+        <h1>РАЗМЕЩЕНИЕ ПО КАЮТАМ!</h1>
+        {% set name = 'Каюта №' %}
+        {% for item in list %}
+           <h3>{{ name }}{{loop.index}} {{item}} {% if loop.first %} - капитан {% endif %}</h3>
+        {% endfor %}
+    </body>
+</html>
